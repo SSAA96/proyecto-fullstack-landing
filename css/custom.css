@@ -51,3 +51,25 @@ footer {
   opacity: 1;
 }
  
+/* ============ TESTIMONIOS ============ */
+.testimonios-section {
+  background-color: var(--bs-tertiary-bg);
+}
+
+.testimonial-card {
+  background-color: var(--bs-body-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+}
+
+.testimonial-quote {
+  color: var(--brand);
+  font-size: 1.5rem;
+  opacity: .5;
+}
+
+.testimonial-name {
+  font-weight: 600;
+  font-size: .9rem;
+}
