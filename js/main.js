@@ -19,3 +19,5 @@ themeToggleBtn.addEventListener('click', () => {
   localStorage.setItem(THEME_KEY, nextTheme);
 });
  
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
