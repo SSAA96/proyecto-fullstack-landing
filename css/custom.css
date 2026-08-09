@@ -73,3 +73,59 @@ footer {
   font-weight: 600;
   font-size: .9rem;
 }
+
+/* ============ PRICING ============ */
+.pricing-card {
+  position: relative;
+  background-color: var(--bs-body-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.pricing-card-featured {
+  border-color: var(--brand);
+  box-shadow: 0 1rem 2rem rgba(79, 70, 229, .18);
+}
+
+.pricing-badge {
+  position: absolute;
+  top: -.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--brand);
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 600;
+  padding: .3rem .8rem;
+  border-radius: 999px;
+}
+
+.pricing-price {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: .5rem 0 1rem;
+}
+
+.pricing-price span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--bs-secondary-color);
+}
+
+.pricing-features li {
+  padding: .35rem 0;
+  color: var(--bs-secondary-color);
+}
+
+.pricing-features i {
+  color: var(--brand);
+  margin-right: .5rem;
+}
