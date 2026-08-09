@@ -1,0 +1,9 @@
+.navbar {
+  background-color: var(--bs-body-bg);
+  border-bottom: 1px solid var(--bs-border-color);
+}
+ 
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}

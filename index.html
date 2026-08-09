@@ -17,3 +17,44 @@
   <!-- CSS -->
   <link href="css/custom.css" rel="stylesheet">
 </head>
+  <body>
+  <!-- ============ HEADER / NAVBAR ============
+       Componente Bootstrap #1: navbar responsive con menú colapsable en mobile.
+       Los links usan anclas (#hero, #features, ...) porque el sitio es de una sola página. -->
+  <header>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#hero">
+          <img src="img/logo.svg" alt="Logo de Flowly" width="32" height="32">
+          <span>Flowly</span>
+        </a>
+ 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+ 
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pricing">Precios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            <li class="nav-item">
+              <!--
+                Botón de modo oscuro. NO usa atributos data-bs-*: el comportamiento
+                lo escribimos nosotros en js/main.js (evento JS propio #1).
+              -->
+              <button id="theme-toggle" class="btn btn-outline-light btn-sm ms-lg-2" type="button" aria-pressed="false">
+                <span id="theme-toggle-icon" aria-hidden="true">🌙</span>
+                <span class="visually-hidden">Cambiar a modo oscuro</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+ </body>
+ 
