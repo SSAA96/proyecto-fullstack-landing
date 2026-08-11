@@ -43,6 +43,7 @@
             <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
             <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
             <li class="nav-item"><a class="nav-link" href="#pricing">Precios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
             <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
             <li class="nav-item">
               <!--
@@ -73,30 +74,37 @@
     </div>
   </section>
  
-  <!-- ============ FEATURES ============ -->
+  <!-- ============ FEATURES ============
+       Componente Bootstrap #2: card (personalizada vía .feature-card en custom.css). -->
   <section id="features" class="py-5">
     <div class="container">
       <h2 class="text-center mb-4">Features</h2>
       <div class="row g-4">
         <div class="col-md-4">
-          <div class="feature-card h-100 p-4">
-            <div class="feature-icon mb-3"><i class="bi bi-list-check"></i></div>
-            <h5>Tareas</h5>
-            <p class="mb-0">Organiza y prioriza el trabajo de tu equipo.</p>
+          <div class="feature-card card h-100 p-4">
+            <div class="card-body p-0">
+              <div class="feature-icon mb-3"><i class="bi bi-list-check"></i></div>
+              <h5 class="card-title">Tareas</h5>
+              <p class="card-text mb-0">Organiza y prioriza el trabajo de tu equipo.</p>
+            </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="feature-card h-100 p-4">
-            <div class="feature-icon mb-3"><i class="bi bi-gear"></i></div>
-            <h5>Automatización</h5>
-            <p class="mb-0">Elimina trabajo repetitivo con reglas simples.</p>
+          <div class="feature-card card h-100 p-4">
+            <div class="card-body p-0">
+              <div class="feature-icon mb-3"><i class="bi bi-gear"></i></div>
+              <h5 class="card-title">Automatización</h5>
+              <p class="card-text mb-0">Elimina trabajo repetitivo con reglas simples.</p>
+            </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="feature-card h-100 p-4">
-            <div class="feature-icon mb-3"><i class="bi bi-graph-up"></i></div>
-            <h5>Reportes</h5>
-            <p class="mb-0">Visualiza el progreso en tiempo real.</p>
+          <div class="feature-card card h-100 p-4">
+            <div class="card-body p-0">
+              <div class="feature-icon mb-3"><i class="bi bi-graph-up"></i></div>
+              <h5 class="card-title">Reportes</h5>
+              <p class="card-text mb-0">Visualiza el progreso en tiempo real.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -109,32 +117,38 @@
       <h2 class="text-center mb-4">Testimonios</h2>
       <div class="row g-4">
         <div class="col-md-4">
-          <div class="testimonial-card h-100 p-4">
-            <i class="bi bi-quote testimonial-quote"></i>
-            <p>Flowly cambió cómo organizamos el equipo.</p>
-            <div class="d-flex align-items-center gap-2 mt-3">
-              <img src="img/avatar-1.svg" alt="Avatar cliente 1" width="40" height="40" class="rounded-circle">
-              <span class="testimonial-name">Camila R.</span>
+          <div class="testimonial-card card h-100 p-4">
+            <div class="card-body p-0">
+              <i class="bi bi-quote testimonial-quote"></i>
+              <p class="card-text">Flowly cambió cómo organizamos el equipo.</p>
+              <div class="d-flex align-items-center gap-2 mt-3">
+                <img src="img/avatar-1.svg" alt="Avatar cliente 1" width="40" height="40" class="rounded-circle">
+                <span class="testimonial-name">Camila R.</span>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="testimonial-card h-100 p-4">
-            <i class="bi bi-quote testimonial-quote"></i>
-            <p>Simple y rápido de adoptar.</p>
-            <div class="d-flex align-items-center gap-2 mt-3">
-              <img src="img/avatar-2.svg" alt="Avatar cliente 2" width="40" height="40" class="rounded-circle">
-              <span class="testimonial-name">Diego M.</span>
+          <div class="testimonial-card card h-100 p-4">
+            <div class="card-body p-0">
+              <i class="bi bi-quote testimonial-quote"></i>
+              <p class="card-text">Simple y rápido de adoptar.</p>
+              <div class="d-flex align-items-center gap-2 mt-3">
+                <img src="img/avatar-2.svg" alt="Avatar cliente 2" width="40" height="40" class="rounded-circle">
+                <span class="testimonial-name">Diego M.</span>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="testimonial-card h-100 p-4">
-            <i class="bi bi-quote testimonial-quote"></i>
-            <p>El soporte es excelente.</p>
-            <div class="d-flex align-items-center gap-2 mt-3">
-              <img src="img/avatar-3.svg" alt="Avatar cliente 3" width="40" height="40" class="rounded-circle">
-              <span class="testimonial-name">Valentina S.</span>
+          <div class="testimonial-card card h-100 p-4">
+            <div class="card-body p-0">
+              <i class="bi bi-quote testimonial-quote"></i>
+              <p class="card-text">El soporte es excelente.</p>
+              <div class="d-flex align-items-center gap-2 mt-3">
+                <img src="img/avatar-3.svg" alt="Avatar cliente 3" width="40" height="40" class="rounded-circle">
+                <span class="testimonial-name">Valentina S.</span>
+              </div>
             </div>
           </div>
         </div>
@@ -148,46 +162,106 @@
       <h2 class="text-center mb-4">Precios</h2>
       <div class="row g-4 align-items-center">
         <div class="col-md-4">
-          <div class="pricing-card h-100 p-4">
-            <h5>Free</h5>
-            <p class="pricing-price">$0<span>/mes</span></p>
-            <ul class="list-unstyled pricing-features">
-              <li><i class="bi bi-check2"></i> Hasta 3 proyectos</li>
-              <li><i class="bi bi-check2"></i> Tareas ilimitadas</li>
-              <li><i class="bi bi-check2"></i> Soporte por email</li>
-            </ul>
-            <a href="#contacto" class="btn btn-outline-primary w-100 mt-3">Elegir Free</a>
+          <div class="pricing-card card h-100 p-4">
+            <div class="card-body p-0">
+              <h5 class="card-title">Free</h5>
+              <p class="pricing-price">$0<span>/mes</span></p>
+              <ul class="list-unstyled pricing-features">
+                <li><i class="bi bi-check2"></i> Hasta 3 proyectos</li>
+                <li><i class="bi bi-check2"></i> Tareas ilimitadas</li>
+                <li><i class="bi bi-check2"></i> Soporte por email</li>
+              </ul>
+              <a href="#contacto" class="btn btn-outline-primary w-100 mt-3">Elegir Free</a>
+            </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="pricing-card pricing-card-featured h-100 p-4">
-            <span class="pricing-badge">Más popular</span>
-            <h5>Pro</h5>
-            <p class="pricing-price">$9<span>/mes</span></p>
-            <ul class="list-unstyled pricing-features">
-              <li><i class="bi bi-check2"></i> Proyectos ilimitados</li>
-              <li><i class="bi bi-check2"></i> Automatizaciones</li>
-              <li><i class="bi bi-check2"></i> Soporte prioritario</li>
-            </ul>
-            <a href="#contacto" class="btn btn-primary w-100 mt-3">Elegir Pro</a>
+          <div class="pricing-card pricing-card-featured card h-100 p-4">
+            <div class="card-body p-0">
+              <span class="pricing-badge">Más popular</span>
+              <h5 class="card-title">Pro</h5>
+              <p class="pricing-price">$9<span>/mes</span></p>
+              <ul class="list-unstyled pricing-features">
+                <li><i class="bi bi-check2"></i> Proyectos ilimitados</li>
+                <li><i class="bi bi-check2"></i> Automatizaciones</li>
+                <li><i class="bi bi-check2"></i> Soporte prioritario</li>
+              </ul>
+              <a href="#contacto" class="btn btn-primary w-100 mt-3">Elegir Pro</a>
+            </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="pricing-card h-100 p-4">
-            <h5>Equipo</h5>
-            <p class="pricing-price">$19<span>/mes</span></p>
-            <ul class="list-unstyled pricing-features">
-              <li><i class="bi bi-check2"></i> Todo lo de Pro</li>
-              <li><i class="bi bi-check2"></i> Roles y permisos</li>
-              <li><i class="bi bi-check2"></i> Reportes avanzados</li>
-            </ul>
-            <a href="#contacto" class="btn btn-outline-primary w-100 mt-3">Elegir Equipo</a>
+          <div class="pricing-card card h-100 p-4">
+            <div class="card-body p-0">
+              <h5 class="card-title">Equipo</h5>
+              <p class="pricing-price">$19<span>/mes</span></p>
+              <ul class="list-unstyled pricing-features">
+                <li><i class="bi bi-check2"></i> Todo lo de Pro</li>
+                <li><i class="bi bi-check2"></i> Roles y permisos</li>
+                <li><i class="bi bi-check2"></i> Reportes avanzados</li>
+              </ul>
+              <a href="#contacto" class="btn btn-outline-primary w-100 mt-3">Elegir Equipo</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
  
+
+  <!-- ============ FAQ ============
+       Componente Bootstrap #3: accordion (personalizado vía .accordion-item/.accordion-button en custom.css). -->
+  <section id="faq" class="faq-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Preguntas frecuentes</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                  ¿Necesito instalar algo para usar Flowly?
+                </button>
+              </h3>
+              <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">No, Flowly funciona 100% desde el navegador. No requiere instalación ni configuración de servidores.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                  ¿Puedo cambiar de plan en cualquier momento?
+                </button>
+              </h3>
+              <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Sí, puedes subir o bajar de plan cuando quieras desde tu panel de cuenta, sin costos ocultos.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                  ¿El plan Free tiene límite de tiempo?
+                </button>
+              </h3>
+              <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">No, el plan Free es gratuito de forma indefinida, con hasta 3 proyectos activos.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
+                  ¿Ofrecen soporte en español?
+                </button>
+              </h3>
+              <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Sí, todo nuestro soporte por email y chat está disponible en español.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ============ FOOTER ============
        id="contacto" pq nav apunta ahí. Grid Bootstrap: marca+desc, links, contacto, redes. -->
