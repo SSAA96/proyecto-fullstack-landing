@@ -21,3 +21,14 @@ themeToggleBtn.addEventListener('click', () => {
  
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+const backToTopBtn = document.getElementById('back-to-top');
+ 
+window.addEventListener('scroll', () => {
+  backToTopBtn.classList.toggle('is-visible', window.scrollY > 400);
+});
+ 
+backToTopBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+ 
