@@ -31,4 +31,20 @@ window.addEventListener('scroll', () => {
 backToTopBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
- 
+
+const contactForm = document.getElementById('contact-form');
+const contactSuccess = document.getElementById('contact-success');
+
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  if (!contactForm.checkValidity()) {
+    contactForm.classList.add('was-validated');
+    contactSuccess.hidden = true;
+    return;
+  }
+
+  contactForm.classList.remove('was-validated');
+  contactForm.reset();
+  contactSuccess.hidden = false;
+});
