@@ -15,6 +15,38 @@
   font-weight: 700;
 }
 
+/* ============ HERO ============ */
+.hero-section {
+  padding-top: 2rem;
+}
+
+.hero-badge {
+  display: inline-block;
+  background-color: var(--bs-tertiary-bg);
+  border: 1px solid var(--bs-border-color);
+  color: var(--brand);
+  font-size: .8rem;
+  font-weight: 600;
+  padding: .35rem .9rem;
+  border-radius: 999px;
+}
+
+.hero-section h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    padding-top: 4rem;
+  }
+
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+}
+
 /* ============ FOOTER ============ */
 footer {
   background-color: var(--bs-tertiary-bg);
