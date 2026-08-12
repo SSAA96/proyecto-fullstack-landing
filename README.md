@@ -15,6 +15,10 @@ Landing page de una sola página para **Flowly**, plataforma ficticia para organ
 - JavaScript vanilla
 - Fuentes: Inter y Poppins (Google Fonts)
  
+## Demo
+
+- Sitio desplegado: https://ssaa96.github.io/proyecto-fullstack-landing/
+
 ## Estructura
  
 ```
