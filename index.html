@@ -85,7 +85,7 @@
           <div class="feature-card card h-100 p-4">
             <div class="card-body p-0">
               <div class="feature-icon mb-3"><i class="bi bi-list-check"></i></div>
-              <h5 class="card-title">Tareas</h5>
+              <h3 class="card-title fs-5">Tareas</h3>
               <p class="card-text mb-0">Organiza y prioriza el trabajo de tu equipo.</p>
             </div>
           </div>
@@ -94,7 +94,7 @@
           <div class="feature-card card h-100 p-4">
             <div class="card-body p-0">
               <div class="feature-icon mb-3"><i class="bi bi-gear"></i></div>
-              <h5 class="card-title">Automatización</h5>
+              <h3 class="card-title fs-5">Automatización</h3>
               <p class="card-text mb-0">Elimina trabajo repetitivo con reglas simples.</p>
             </div>
           </div>
@@ -103,7 +103,7 @@
           <div class="feature-card card h-100 p-4">
             <div class="card-body p-0">
               <div class="feature-icon mb-3"><i class="bi bi-graph-up"></i></div>
-              <h5 class="card-title">Reportes</h5>
+              <h3 class="card-title fs-5">Reportes</h3>
               <p class="card-text mb-0">Visualiza el progreso en tiempo real.</p>
             </div>
           </div>
@@ -165,7 +165,7 @@
         <div class="col-md-4">
           <div class="pricing-card card h-100 p-4">
             <div class="card-body p-0">
-              <h5 class="card-title">Free</h5>
+              <h3 class="card-title fs-5">Free</h3>
               <p class="pricing-price">$0<span>/mes</span></p>
               <ul class="list-unstyled pricing-features">
                 <li><i class="bi bi-check2"></i> Hasta 3 proyectos</li>
@@ -180,7 +180,7 @@
           <div class="pricing-card pricing-card-featured card h-100 p-4">
             <div class="card-body p-0">
               <span class="pricing-badge">Más popular</span>
-              <h5 class="card-title">Pro</h5>
+              <h3 class="card-title fs-5">Pro</h3>
               <p class="pricing-price">$9<span>/mes</span></p>
               <ul class="list-unstyled pricing-features">
                 <li><i class="bi bi-check2"></i> Proyectos ilimitados</li>
@@ -194,7 +194,7 @@
         <div class="col-md-4">
           <div class="pricing-card card h-100 p-4">
             <div class="card-body p-0">
-              <h5 class="card-title">Equipo</h5>
+              <h3 class="card-title fs-5">Equipo</h3>
               <p class="pricing-price">$19<span>/mes</span></p>
               <ul class="list-unstyled pricing-features">
                 <li><i class="bi bi-check2"></i> Todo lo de Pro</li>
@@ -263,11 +263,39 @@
       </div>
     </div>
   </section>
+
+  <!-- ============ CONTACTO ============
+       Formulario propio (no lo genera Bootstrap): name/email/message con label asociado a cada input. -->
+  <section id="contacto" class="contacto-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contacto</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <form id="contact-form" novalidate>
+            <div class="mb-3">
+              <label for="contact-name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="contact-name" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="contact-email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="contact-email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="contact-message" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="contact-message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
+            <p id="contact-success" class="text-success fw-semibold mt-3" role="status" hidden>¡Gracias! Tu mensaje fue enviado correctamente.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
   </main>
 
   <!-- ============ FOOTER ============
-       id="contacto" pq nav apunta ahí. Grid Bootstrap: marca+desc, links, contacto, redes. -->
-  <footer id="contacto" class="py-5 mt-5">
+       Grid Bootstrap: marca+desc, links, contacto, redes. -->
+  <footer class="py-5 mt-5">
     <div class="container">
       <div class="row gy-4">
         <div class="col-lg-4">
@@ -279,7 +307,7 @@
         </div>
  
         <div class="col-6 col-lg-2">
-          <h6 class="footer-heading">Producto</h6>
+          <h3 class="footer-heading fs-6">Producto</h3>
           <ul class="list-unstyled footer-links">
             <li><a href="#features">Features</a></li>
             <li><a href="#testimonios">Testimonios</a></li>
@@ -288,7 +316,7 @@
         </div>
  
         <div class="col-6 col-lg-2">
-          <h6 class="footer-heading">Empresa</h6>
+          <h3 class="footer-heading fs-6">Empresa</h3>
           <ul class="list-unstyled footer-links">
             <li><a href="#">Sobre nosotros</a></li>
             <li><a href="#">Blog</a></li>
@@ -297,7 +325,7 @@
         </div>
  
         <div class="col-lg-4">
-          <h6 class="footer-heading">Contacto</h6>
+          <h3 class="footer-heading fs-6">Contacto</h3>
           <ul class="list-unstyled footer-links">
             <li><a href="mailto:hola@flowly.com">hola@flowly.com</a></li>
             <li><a href="tel:+56900000000">+56 9 0000 0000</a></li>
@@ -331,3 +359,4 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
  </body>
+</html>
